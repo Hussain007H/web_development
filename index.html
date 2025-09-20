@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E - COMMERCE </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav class="nav">
+    <div class="pic">
+      <img src="https://images.seeklogo.com/logo-png/36/2/royal-enfield-logo-png_seeklogo-361484.png" alt="Logo">
+    </div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="branches.html">Branches</a>
+      <a href="contacts.html">Contacts</a>
+    
+    </div>
+    <div class="btns">
+    <span id="userName" style="margin-right:15px; font-weight:bold; color:darkblue;"></span>
+      <button class="bt1" id="registerbtn" onclick="openregister('register')">Register</button>
+      <button class="bt2" id="loginbtn" onclick="openregister('login')">login</button>
+      <button class="bt3" id="logoutbtn" onclick="logout()" style="display:none;">Logout</button>
+    </div>
+  </nav>
+
+   
+<div id="registration" class="register">
+  <div class="register-content">
+    <span class="close" onclick="closeregister()">&times;</span>
+    <h2 id="Title">Login</h2>
+
+    <input type="text" id="usernameInput" placeholder="Enter Username" required>
+    <input type="password" id="passwordInput" placeholder="Enter Password" required>
+    
+    <button onclick="submitregister()">Submit</button>
+  </div>
+</div>
+
+    
+
+  <section class="items">
+    <div class="item">
+        <img src="https://www.royalenfield.com/content/dam/royal-enfield/hntr-350/home/motorcycle/motorcycle-landing.jpg" alt="">
+        <h2>hunter 350</h2>
+        <p>₹ 1,90,555 Onwards</p>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/49656/continental-gt-right-side-view-12.png?isig=0&q=80" alt="">
+        <h2>gt650</h2>
+        <p> ₹ 1,50,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+    <div class="item">
+        <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/new-classic-350/studio-shots/stealth-black/stealth-black-000.png" alt="">
+        <h2>classic 350</h2>
+        <p> ₹ 1,36,585 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzUcLyL7JmPWI5hvbEIKB5KN_q_eNU8IBO6A&s" alt="">
+        <h2>scram 411</h2>
+        <p> ₹ 3,90,500 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/new-classic-350/studio-shots/360/cammando-sand/01.png" alt="">
+        <h2>classic 350 special</h2>
+        <p> ₹ 2,79,556 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://www.bikeleague.in/wp-content/uploads/2024/01/SG-650-Right.jpg" alt="">
+        <h2> shotgun 650</h2>
+        <p> ₹ 1,40,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://www.motobikes.cz/ew/ew_images/image_of_object?ObjectIdentifier=pli:90d764fe-4d15-4dc2-ba66-146b31927320&Filter=4ec337f4-8c99-46f0-bfd4-a332d8812229&ImageIndex=0&FailImage=4d0504a6-aa1b-41b2-b420-43eb2b040ae5" alt="">
+        <h2>shotgun 350</h2>
+        <p> ₹ 4,30,587 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpHUqAo1sCiCXuhgKeYIMDbruodl3n7GvRd83YqISyVeAbq4P6I5oFhNKqRfq9-0YF-Z4&usqp=CAU" alt="">
+        <h2>Super Meteor 650 </h2>
+        <p> ₹ 2,30,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://www.otocapital.in/_next/image?url=https%3A%2F%2Fassets.otocapital.in%2Fproduction%2Ffireball-matt-green-royal-enfield-meteor-350-image.jpeg&w=1536&q=75" alt="">
+        <h2> Meteor 350 </h2>
+        <p> ₹ 2,90,558 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/51245/meteor-350-right-side-view-10.png?isig=0&q=80" alt="">
+        <h2>classic 350</h2>
+        <p> ₹ 3,00,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://images.autox.com/uploads/bikes/2021/11/royal-enfield-himalayan-650.jpg" alt="">
+        <h2> Himalayan 650</h2>
+        <p> ₹ 2,90,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://www.motorbeam.com/wp-content/uploads/Royal-Enfield-Continental-GT-650-Ice-Queen.jpg" alt="">
+        <h2>interceptor 650</h2>
+        <p> ₹ 3,45,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/17662281-0-111299981.jpg" alt="">
+        <h2>gt 650</h2>
+        <p> ₹ 2,90,558 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://www.royalenfield.com/content/dam/royal-enfield/usa/motorcycles/landing/new/int650-listing.jpg" alt="">
+        <h2>coastal 650</h2>
+        <p> ₹ 1,45,458 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://www.royalenfield.com/content/dam/royal-enfield/motorcycles/new-classic-350/studio-shots/new-360/madras-red/01.png" alt="">
+        <h2>classic 350</h2>
+        <p> ₹ 2,90,558 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://imgd.aeplcdn.com/1056x594/n/cw/ec/183389/classic-350-right-side-view-44.jpeg?isig=0&q=80" alt="">
+        <h2>classic 650</h2>
+        <p> ₹ 2,70,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://static.gowheelo.com/uploads/admin/bike/82766231-1631-4ede-a25f-76448e2170a6.png" alt="">
+        <h2>royal classic 350</h2>
+        <p> ₹ 3,20,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://www.otocapital.in/_next/image?url=https%3A%2F%2Fassets.otocapital.in%2Fproduction%2Ffireball-matt-green-royal-enfield-meteor-350-image.jpeg&w=1536&q=75" alt="">
+        <h2> Meteor 350 </h2>
+        <p> ₹ 2,75,432 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://imgd.aeplcdn.com/1280x720/bw/ec/33557/Royal-Enfield-Thunderbird-350X-Side-122866.jpg?wm=0" alt="">
+        <h2>thunderbolt 350</h2>
+        <p> ₹ 1,32,999 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/49656/continental-gt-right-side-view-12.png?isig=0&q=80" alt="">
+        <h2>gt 650</h2>
+        <p> ₹ 2,56,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzUcLyL7JmPWI5hvbEIKB5KN_q_eNU8IBO6A&s" alt="">
+        <h2>scram 350</h2>
+        <p> ₹ 3,90,558 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    <div class="item">
+        <img src="https://www.bikeleague.in/wp-content/uploads/2024/01/SG-650-Right.jpg" alt="">
+        <h2>shotgun 650</h2>
+        <p> ₹ 2,70,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+     <div class="item">
+        <img src="https://cdn.dealerspike.com/imglib/v1/800x600/imglib/trimsdb/17662281-0-111299981.jpg" alt="">
+        <h2>gt 650</h2>
+        <p> ₹ 3,40,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+     <div class="item">
+        <img src="https://www.motorbeam.com/wp-content/uploads/Royal-Enfield-Continental-GT-650-Ice-Queen.jpg" alt="">
+        <h2>interceptor 650</h2>
+        <p> ₹ 2,56,000 Onwards</P>
+       <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+    </div>
+
+    
+
+  </section>
+  
+
+
+
+  <script src="app.js"></script>
+    
+    
+</body>
+</html>
